@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Input with Icons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+        }
+
+        .chat-input-container {
+            width: 90%;
+            max-width: 600px;
+            background-color: #ffffff;
+            border-radius: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            gap: 10px;
+            position: relative;
+        }
+
+        .icon-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: absolute;
+            bottom: 10px;
+            left: 15px;
+        }
+
+        .icon-container img {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        textarea {
+            flex: 1;
+            border: none;
+            outline: none;
+            resize: none;
+            font-size: 16px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+            margin-left: 50px;
+        }
+
+        textarea::placeholder {
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-input-container">
+        <div class="icon-container">
+            <img src="emoji-icon.png" alt="Emoji" title="Add Emoji">
+            <img src="sticker-icon.png" alt="Sticker" title="Add Sticker">
+            <img src="microphone-icon.png" alt="Microphone" title="Record Audio">
+            <img src="camera-icon.png" alt="Camera" title="Add Photo">
+        </div>
+        <textarea rows="1" placeholder="Type a message..."></textarea>
+    </div>
+</body>
+</html>
