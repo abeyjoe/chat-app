@@ -73,6 +73,16 @@
         .reply-box .actions .send-button:hover {
             background-color: #d3d6db;
         }
+        img {
+            margin: auto;
+            margin-left: 20px;
+            width: 60%;
+            height: 60%;
+        }
+        /*
+        div.logo {
+            background-color: black;
+        }*/
     </style>
     <script>
         // JavaScript for button functionalities
@@ -139,9 +149,10 @@
     <div class="flex h-screen">
         <!-- Sidebar -->
         <div class="w-1/4 bg-white-900 text-black flex flex-col">
-            <div class="p-4">
-                <h1 class="text-xl font-bold">Chat Transact</h1>
-            </div>
+            <div class="logo p-4 bg-gray-800 text-white">
+                <img src="./img/ChatTransactLogo.png" alt="Chat Transact Logo">
+                <!--<h1 class="text-xl font-bold">Chat Transact</h1>-->
+            </div><br>
             <input type="text" placeholder="Search" class="bg-white-700 text-sm p-2 rounded-md mx-4 mb-4 text-black">
 
             <nav class="flex-grow">
